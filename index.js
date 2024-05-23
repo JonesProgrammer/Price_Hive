@@ -33,7 +33,7 @@ app.get('/search', async (req, res) => {
             results += await scrapeExito(searchValue);
         }
         if (!store || store === 'Olimpica') {
-            //results += await scrapeOlimpica(searchValue);
+            results += await scrapeOlimpica(searchValue);
         }
 
         const indexScript = `
